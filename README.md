@@ -1,5 +1,9 @@
 # ml-log
 A structured record of my machine learning journey and discoveries.
+
+<div align="center">
+<img src="ml-log.png" atl="logo" hight=150 width=150>
+  </div>
 ## Repository Structure
 
 ```text
