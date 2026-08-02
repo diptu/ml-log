@@ -1,0 +1,142 @@
+\documentclass[12pt,openany]{book}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title Page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\Huge\bfseries Deep Learning Fundamentals\\[0.5cm]}
+
+    {\Large Artificial Neural Networks}\\
+
+    \vfill
+
+    \includegraphics[width=0.3\textwidth]{ml-log.png}
+
+    \vfill
+
+    {\Large Table of Contents}
+
+    \vspace{2cm}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table of Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Artificial Neural Networks (ANN)}
+
+\section{Introduction to Deep Learning \& ANNs}
+
+\subsection{Foundations and Background}
+\begin{itemize}
+    \item What is Deep Learning
+    \item DeepLearning Vs Machine Learning
+    \item Why deep learing getting famous
+    \item Deep learning application
+    \item deep learning types
+    \item History and evolution of Deep Learning
+\end{itemize}
+
+\section{The Perceptron}
+
+\subsection{The Fundamental Building Block of Neural Networks}
+\begin{itemize}
+    \item What is Perceptron
+    \item Perceptron vs sigmoyed Neuron
+    \item Limitations of single-layer perceptrons
+\end{itemize}
+
+\section{Multi-Layer Perceptrons (MLP)}
+
+\subsection{Architecture and Forward Propagation}
+\begin{itemize}
+    \item Internal architecture of MLPs
+    \item Activation functions
+    \item Forward propagation
+\end{itemize}
+
+\subsection{Training Neural Networks}
+\begin{itemize}
+    \item Backpropagation
+    \item Gradient Descent
+    \item Optimization algorithms
+\end{itemize}
+
+\section{Model Optimization and Tuning}
+
+\subsection{Improving Network Performance}
+\begin{itemize}
+    \item Vanishing and exploding gradients
+    \item Weight initialization
+    \item Batch normalization
+    \item Dropout
+    \item Regularization
+    \item Hyperparameter tuning
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Practical Implementation and Advanced Topics}
+
+\section{Practical Setup with Keras \& TensorFlow}
+
+\begin{itemize}
+    \item Installing TensorFlow and Keras
+    \item Regression models
+    \item Classification models
+    \item Callbacks
+    \item TensorBoard
+    \item Functional API
+    \item Saving and loading models
+\end{itemize}
+
+\section{Training Performance Summary}
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Network Type & Epochs & Optimizer & Accuracy\\
+\hline
+Perceptron & 10 & SGD & 0.750\\
+MLP (Basic) & 50 & Adam & 0.882\\
+MLP (Regularized) & 100 & Adam & 0.945\\
+\hline
+\end{tabular}
+
+\vspace{0.3cm}
+Table 2.1: Training Performance Summary
+\end{center}
+
+\section{Key Equations in ANN}
+
+\[
+\frac{\partial E}{\partial w_j}
+=
+\frac{\partial E}{\partial y}
+\cdot
+\frac{\partial y}{\partial net}
+\cdot
+\frac{\partial net}{\partial w_j}
+\]
+
+\end{document}
